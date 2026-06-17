@@ -75,6 +75,7 @@ input{
 .btn:hover{
     background-color: #f33f5a;
     border: 2px solid #f33f5a;
+    box-shadow: 0 0 10px rgba(245, 163, 176, 0.692);
 }
 
 @media (max-width:991px){
