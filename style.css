@@ -45,6 +45,7 @@ form h2{
     max-width: 400px;
     font-size: 25px;
     color: rgba(159, 146, 235, 0.856);
+    text-shadow: 0 0 10px rgba(204, 198, 236, 0.856);
     margin-bottom: 35px;
 }
 
