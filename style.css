@@ -15,21 +15,36 @@ min-height: 100vh;
 
 }
 
+.header-image{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.header-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
 form{
     background-color: #242513;
     display: flex;
     flex-direction: column;
     padding: 50px;
-    width: 420px;
+    width: 100%;
+    max-width: 500px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align: center;
 
 }
 
 form h2{
-
-    font-size: 40px;
-    color: mediumslateblue;
+    width: 100%;
+    max-width: 400px;
+    font-size: 25px;
+    color: rgba(159, 146, 235, 0.856);
     margin-bottom: 35px;
 }
 
@@ -74,4 +89,87 @@ input{
 }
 b, p{
     color: aliceblue;
+}
+
+.btn{
+    background-color: #e53854;
+    border: 2px solid #e53854;
+    cursor: pointer;
+    color: white;
+    padding: 17px;
+    border-radius: 24px;
+    font-size: 16px;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.loader{
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+.btn.loading .btn-text{
+    display: none;
+}
+
+.btn.loading .loader{
+    display: block;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.checkbox-container input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.checkbox-container label{
+    color: aliceblue;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.checkbox-container a{
+    color: mediumslateblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.checkbox-container a:hover{
+    text-decoration: underline;
+}
+
+.mensaje{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.success{
+    color: #4caf50;
 }

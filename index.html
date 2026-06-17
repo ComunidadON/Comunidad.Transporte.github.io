@@ -11,7 +11,11 @@
 <body>
    
 <form name="formON" method="post" action="https://script.google.com/macros/s/AKfycbwGqf0QNeav1k1_bzfu9ZM7aqJTT-_lgNGSGX9YQFOEfev_U0GgQnE3KfkuPsLlRMRreg/exec">
-    
+    <div class="header-image">
+    <img src="transporte-image.jpeg" alt="Comunidad Transporte ON">
+    </div>
+
+
     <h2>Comunidad Transporte ON</h2>
     <input required name="Nombre" type="text" placeholder="Nombre">
     <input required name="Apellido" type="text" placeholder="Apellido">
@@ -20,9 +24,25 @@
     <input required name="Marca de Camión" type="text" placeholder="Marca de Camión">
     <input required name="Modelo de Camión" type="text" placeholder="Modelo de Camión">
     <input required name="Dominio" type="text" placeholder="Dominio"> 
-    <input required name="Acepto los términos y condiciones.Ver" type="checkbox" title="Acepto los términos y condiciones."><p>Acepto los términos y condiciones.<b><link rel="stylesheet" href="https://drive.google.com/file/d/1GZUeI5W2GXUE3uIejSTPGfC9onkn4J92/view"></b> Ver</p>
-    <input name="Enviar" type="submit" id="idbtn" class="btn" value="Enviar">
+    
+    <div class="checkbox-container">
+    <input
+        required
+        type="checkbox"
+        id="terminos"
+        name="Acepto los términos y condiciones"
+    >
 
+    <label for="terminos">
+        Acepto los términos y condiciones.
+        <a href="2026.06.17 Club Transporte TERMINOS Y CONDICIONES USO DEL PROGRAMA.pdf" target="_blank"> Ver        </a>
+    </label>
+</div>
+    <button type="submit" id="idbtn" class="btn">
+    <span class="btn-text">Enviar</span>
+    <span class="loader"></span>
+    </button>
+    <p id="mensaje" class="mensaje"></p>
 
 </form>
 <script src="script.js"></script>   
